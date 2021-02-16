@@ -1,3 +1,5 @@
+@media(Min-width: 768px){
+
 *{
     padding: 200;
     margin: 200;
@@ -42,6 +44,7 @@ body{
 .button{
     width: 300px;
     margin: 0 auto;
+    float: center;
 }
 
 .bucketItem{
@@ -50,4 +53,31 @@ body{
 }
 
 
-
+/*menu*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: Black;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-top: 1px solid cornflowerblue;
+    border-right: 1px solid cornflowerblue;
+  }
+  
+  /* Change the link color */
+  li a:hover {
+    background-color: cornflowerblue;
+  }
+}
