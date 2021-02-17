@@ -1,5 +1,3 @@
-@media(Min-width: 768px){
-
 *{
     padding: 200;
     margin: 200;
@@ -28,13 +26,12 @@ p{
     text-align: center;
     
 }
-
+/*The Body */
 body{
     
     background-color: green;
     color: white;
     border-bottom: 3px solid black;
-    border-top: 3px solid black;
     border-left: 3px solid black;
     border-right: 3px solid black;
     position: center;
@@ -51,7 +48,7 @@ body{
     width: 300px;
     margin:0 auto;
 }
-
+/*The end of theBody */
 
 /*menu*/
 ul {
@@ -80,4 +77,25 @@ ul {
   li a:hover {
     background-color: cornflowerblue;
   }
-}
+
+  /*columns */
+    .column {
+        float: left;
+        text-align: center;
+        width: 33.33%;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+        }
+      /*end Columns*/
+      }
+  
