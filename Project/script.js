@@ -1,28 +1,37 @@
 
 //Tip Calculator code
-function calculateTip () {
-    var total = document.getElementById("total").value
-    var tip_total = document.getElementById(tip_total).value
+let calc = document.getElementById('calc');
 
-    //Validates if the total label is blank
-    if(total.text = "" )
-    {
-        alert("Not Tipping is a Crime")
-    }
-    //Validate if Tip total is selected
-    if(tip_total.checked){
+calc.addEventListener('click', function(){
+    let total = document.getElementById('total').value;
+    let tipTotal = document.getElementById('tipTotal').value;
 
-    }
-    // Calculates the tip
-    tipAmount.text = total * tip_total;
+    let tipamount = document.getElementById('tipamount').value = tipTotal/100*total;
+    document.getElementById('grandTotal').value = parseFloat(total) + parseFloat(tipamount);
 
-    //Calculate the total with the tip
-     grandTotal.text = tipAmount + total;
-}//bracees for button
-
-     // Action when button is clicked
-    calc.onclick = calculateTip();
+})
     //End Tip Calculator code
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -45,7 +54,7 @@ function convertTemp() {
         degreesC = (degreesF - degree) * fOn //convert Celcius to Farenheight C = (F - 32) * (5/9)
 
         //Validation to make sure there is numbers in labels
-        
+
         //if degreeF is blank run degree F and display The temperatur is degrees farenheight else run degreesC
         if(degreeF.value === '') 
         { 
@@ -62,22 +71,10 @@ convert.onclick = convertTemp();
 //End of degree code
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //Distance code
 function convertDistance() {
+    const number = 1.609;
+
     //validation if labels are empty
 
     //convert Miles to Kilometers
