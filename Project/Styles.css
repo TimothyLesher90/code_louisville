@@ -51,12 +51,39 @@ body{
 /*The end of theBody */
 
 /*menu*/
-ul {
+
+.navagation{
+border-bottom: 0px solid black;
+text-align: left;
+height: 50px;
+line-height: 50px;
+display: inline
+}
+
+.menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: Black;
+    background-color: green;
+    float: left;
+ 
+    }
+  
+ menu a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
   }
   
   li {
@@ -64,19 +91,19 @@ ul {
   }
   
   li a {
-    display: block;
+    display: inline;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 10px;
     text-decoration: none;
-    border-top: 1px solid cornflowerblue;
-    border-right: 1px solid cornflowerblue;
   }
   
-  /* Change the link color */
   li a:hover {
-    background-color: cornflowerblue;
+    background-color: green;
   }
+  
+
+
 
   /*columns */
     .column {
@@ -98,4 +125,38 @@ ul {
         }
       /*end Columns*/
       }
+
+ 
+/*hamburger menu*/
+label{
+  margin: 0 40px 0 0;
+  font-size: 28px;
+  line-height: 70px;
+  display:none;
+}
+      #toggle{
+        display: none;
+      }
+      @media only screen and (max-width: 600px) {
+        label{
+          display:block;
+          cursor: pointer;
+        }
+      .menu{
+  text-align: center;
+  width:100%;
+  display: none;
+}
+      .menu a {
+  display:block;
   
+  margin: 0;
+}
+        #toggle:checked + .menu {
+  display:block;
+}
+      }
+  
+
+
+      
